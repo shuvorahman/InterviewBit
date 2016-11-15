@@ -25,6 +25,5 @@ class Solution:
             else:
                 temp = A[0:2]
                 result.append(temp[1])
-                A.remove(temp[1])
                 result.append(temp[0])
-                A.remove(temp[0])
+                A = A[2:]
